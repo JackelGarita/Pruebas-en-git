@@ -10,6 +10,9 @@ namespace Nuevapruebagit.Controllers
     {
         public ActionResult Index()
         {
+            Models.Encriptador encriptador = new Models.Encriptador();
+            string datos=encriptador.Encriptar("Hola mundo");
+            string datosnew=encriptador.Desencriptar(datos);
             return View();
         }
 
