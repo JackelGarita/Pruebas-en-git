@@ -13,10 +13,7 @@ namespace Nuevapruebagit.Controllers
             Models.Encriptador encriptador = new Models.Encriptador();
             string datos=encriptador.Encriptar("Hola mundo");
             string datosnew=encriptador.Desencriptar(datos);
-            string datos2 = encriptador.Encriptar("Hola mundo26516156");
-            string datosnew2 = encriptador.Desencriptar(datos);
-            string datos3 = encriptador.Encriptar("Hola mundo26516156");
-            string datosnew3 = encriptador.Desencriptar(datos);
+      
             return View();
         }
 
