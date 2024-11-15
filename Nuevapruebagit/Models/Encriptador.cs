@@ -18,13 +18,13 @@ namespace Nuevapruebagit.Models
         public Encriptador(string texto)
         {
             this.texto = texto;
-            this.Clave = ConfigurationManager.AppSettings["claveAES"];
+            this.Clave = ConfigurationManager.AppSettings["AES"];
         }
 
         public Encriptador()
         {
             this.texto = "";
-            this.Clave = ConfigurationManager.AppSettings["claveAES"];
+            this.Clave = ConfigurationManager.AppSettings["AES"];
         }
 
         public string Texto { get => texto; set => texto = value; }
